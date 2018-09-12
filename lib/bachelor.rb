@@ -17,5 +17,5 @@ end
 def get_average_age_for_season(data, season)
   r=0.0
   data[season].each{|el| r+=el["age"].to_f}
-  r/(data[season].size).to_i
+  (r/(data[season].size))).to_i
 end
