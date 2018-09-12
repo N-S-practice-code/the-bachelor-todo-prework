@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, season)
-  r=data[season].find{|el| el["status"]=="Winner"}.split(" ").[0]
+  r=data[season].find{|el| el["status"]=="Winner"}
 end
 
 def get_contestant_name(data, occupation)
