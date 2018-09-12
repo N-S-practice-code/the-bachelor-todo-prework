@@ -3,7 +3,7 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  data[season].find{|el| el["occupation"]==occupation}["name"]
+  data.values.flatten.find{|el| el["occupation"]==occupation}
 end
 
 def count_contestants_by_hometown(data, hometown)
