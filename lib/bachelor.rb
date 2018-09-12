@@ -11,7 +11,7 @@ def count_contestants_by_hometown(data, hometown)
 end
 
 def get_occupation(data, hometown)
-  data.values.flatten.select{|el| el["hometown"]==hometown}.size
+  data.values.flatten.find{|el| el["hometown"]==hometown}["occupation"]
 end
 
 def get_average_age_for_season(data, season)
